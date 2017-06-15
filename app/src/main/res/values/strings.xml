@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestProject</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="reply">Reply</string>
+    <string name="unlike">Unlike</string>
+    <string name="testing_reply">Testing Reply</string>
+    <string name="posting_via_app">Posting Via app</string>
+    <string name="_3_months_ago">3 Months Ago</string>
+    <string name="testuser">testuser</string>
+</resources>
