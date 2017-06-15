@@ -61,36 +61,33 @@
 
         <LinearLayout
 
-            android:paddingTop="20dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
             <TextView
+               android:inputType="textMultiLine"
                 android:id="@+id/sample_text"
-                android:background="#7295A6"
+
                 android:gravity="center_vertical"
                 android:textSize="13sp"
                 android:paddingTop="1dp"
-                android:paddingLeft="24dp"
+                android:paddingLeft="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="@string/posting_via_app"/>
+                android:layout_height="wrap_content"
+                android:text="M-F 9am-5pm \n By Appointment Only"
+                android:maxLines="10"
+
+                />
 
 
         </LinearLayout>
-        <TextView
-            android:id="@+id/sample_text1"
-            android:paddingLeft="30dp"
-            android:paddingTop="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/testing_reply"/>
 
         <LinearLayout
-
+            android:paddingTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

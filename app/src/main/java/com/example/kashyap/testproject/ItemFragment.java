@@ -61,7 +61,7 @@ public class ItemFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_item_list, container, false);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.list);
-        recyclerView.setAdapter(new MyItemRecyclerViewAdapter(fillDummyNews(), mListener));
+        recyclerView.setAdapter(new MyItemRecyclerViewAdapter(fillDummyNews(), mListener,getContext()));
         recyclerView.addItemDecoration(new SimpleDividerItemDecoration(
                 getContext()
         ));
@@ -94,34 +94,73 @@ public class ItemFragment extends Fragment {
     }
 
     private List<NewsFeed> fillDummyNews () {
-       NewsFeed newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+       NewsFeed newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+               "asdf\n" +
+               "\n" +
+               "\n" +
+               "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1","\n" +
+                 "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
-         newsFeed = new NewsFeed("Rahul","3 months ago", "1","asdf");
+         newsFeed = new NewsFeed("Rahul","3 months ago", "1",  "asdf\n" +
+                 "\n" +
+                 "\n" +
+                 "and testing reply");
         ITEMS.add(newsFeed);
 
         return ITEMS;
